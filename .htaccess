@@ -1,0 +1,30 @@
+# ============================================================
+# FILE: .htaccess
+# ------------------------------------------------------------
+# Konfigurasi Apache untuk URL Rewriting (Opsional)
+# Sistem Informasi Evaluasi Kepatuhan ISO/IEC 27001
+# ============================================================
+
+# Aktifkan Rewrite Engine
+RewriteEngine On
+
+# Base directory
+RewriteBase /SISCI/
+
+# Jika file atau directory ada, gunakan yang ada
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirect semua request ke index.php
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# Proteksi direktori
+Options -Indexes
+
+# Disable server signature
+ServerSignature Off
+
+# PHP settings (opsional, bisa juga di php.ini)
+# php_value upload_max_filesize 10M
+# php_value post_max_size 10M
+# php_value max_execution_time 300
