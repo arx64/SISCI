@@ -6,7 +6,7 @@
  * Konfigurasi umum sistem dan session management
  * Sistem Informasi Evaluasi Kepatuhan ISO/IEC 27001
  * ------------------------------------------------------------
- * @author  : M. Arifin Ilham
+ * @author  : Eci Esmaini
  * @project : Sistem Evaluasi Kepatuhan Keamanan Informasi
  * @version : 1.0
  * ============================================================
